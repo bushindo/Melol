@@ -72,7 +72,8 @@ $id = isset($_GET['id']) ? $_GET['id'] : die('ERROR: Registro no encontrado.');
         <tr>
         <td></td>
         <td>
-        <input type='submit' value='Guardar' />
+        <input type = "button" value = "Login"
+ onclick = "formhash(this.form, this.form.password);" />
         <a href="./index.php?action=<?php ?>">Volver a Inicio</a>
         </td>
         </tr>

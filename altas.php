@@ -14,7 +14,7 @@
                 . "SET nif=?, nombre=?, apellido1=?, apellido2=?, "
                 . " email=?, telefono=?, "
                 . "usuario=?, password=? ";
-        echo $query,"<br>";
+         echo $query,"<br>";
  // prepare query for execution
         if ($stmt = $conexion->prepare($query)){
         echo "<div>registro preparado.</div>";
@@ -74,7 +74,8 @@
             <tr>
             <td></td>
             <td>
-                <input type="submit" name="save" value="Save" />
+                <input type = "button" value = "Login"
+ onclick = "formhash(this.form, this.form.password);" />
                 <a href="./index.php?action=<?php ?>">Volver a Inicio</a>
             </td>
             </tr>
