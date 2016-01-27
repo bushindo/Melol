@@ -18,20 +18,8 @@ $id = isset($_GET['id']) ? $_GET['id'] : die('ERROR: Registro no encontrado.');
         } else {
             echo 'Error al actualizar.';
         }
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    } 
+  
     
 // leer el registro de la tabla
     $query = "SELECT nif, nombre, apellido1, apellido2, email, telefono, usuario, password "
@@ -85,7 +73,7 @@ $id = isset($_GET['id']) ? $_GET['id'] : die('ERROR: Registro no encontrado.');
         <td></td>
         <td>
         <input type='submit' value='Guardar' />
-        <a href='index.php'>Volver a Inicio</a>
+        <a href="./index.php?action=<?php ?>">Volver a Inicio</a>
         </td>
         </tr>
     </table>
